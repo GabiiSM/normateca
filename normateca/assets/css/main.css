@@ -1,0 +1,390 @@
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  background-color: #f0f0f0;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  max-height: 75px;
+  color: #333333;
+  border-top: 12px solid #967216;
+  padding: 20px;
+  padding-left: 30px;
+  box-shadow: 0 7px 9.5px -9.5px grey;
+}
+
+header img {
+  width: 13%;
+  margin-right: 13px;
+}
+
+header h3 > i {
+  color: #967200;
+}
+
+header div {
+  margin-left: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 14px;
+}
+.titulo {
+  text-align: center;
+  font-size: 16px;
+
+  line-height: 90px;
+  margin-top: -20px;
+  /*  box-shadow: inset 0 7px 9.5px -9.5px grey;
+  background-color: #ffffff;*/
+}
+
+main {
+  display: grid;
+  margin: 20px 0;
+}
+
+section {
+  justify-self: center;
+  width: 95%;
+  border-radius: 8px;
+  text-align: center;
+  min-height: 400px;
+  /*
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: center;
+  column-gap: 10px;*/
+
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
+}
+
+section p {
+  color: #b39122;
+}
+
+.firstBox {
+  background-color: #ffffff;
+  box-shadow: 0 0px 10px 2px rgb(205, 205, 205);
+  flex-basis: 30%;
+}
+
+.lastBox {
+  flex-basis: 70%;
+}
+
+.firstBox,
+.lastBox {
+  border-radius: 5px;
+  height: min-content;
+  padding: 10px;
+}
+
+.search {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  width: fit-content;
+}
+
+label {
+  font-weight: bold;
+}
+
+.search > label {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  text-align: start;
+}
+
+.search > input {
+  display: block;
+  margin-top: 5px;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  width: 230px;
+  background-color: #eff4fd;
+}
+
+.firstBox button {
+  padding: 8px 16px;
+  background-color: #967200;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.firstBox button:hover {
+  background-color: #b0922e;
+}
+
+.filters {
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.filters label {
+  font-weight: normal;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 6px;
+}
+
+.dates > label {
+  display: inline-block;
+  width: 45px;
+  font-size: 14px;
+  text-align: start;
+  margin-left: -45px;
+  font-weight: normal;
+}
+
+.dates > input {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  width: 120px;
+  background-color: #eff4fd;
+}
+
+.recents {
+  display: flex;
+}
+
+.recents p {
+  color: black;
+}
+
+.recents ul li {
+  list-style: none;
+  margin-left: -50px;
+}
+
+.JA {
+  width: 100%;
+}
+
+.JA li,
+.SA li {
+  text-align: start;
+  margin-left: 125px;
+}
+
+/* .SA {
+  
+} */
+
+.results {
+  text-align: start;
+  overflow-x: auto;
+}
+
+.results table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results th,
+.results td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.results th {
+  background-color: #454545;
+  color: whitesmoke;
+  height: 30px;
+  border-right: 1px solid #ddd; /* Add this line to create a division between header cells */
+}
+.results tr:nth-child(odd) {
+  background-color: rgba(
+    228,
+    223,
+    206,
+    0.866
+  ); /* Add this line to create striped rows */
+}
+
+.results tr:nth-child(even) {
+  background-color: whitesmoke; /* Add this line to create striped rows */
+}
+
+.results tr:hover {
+  background-color: #f5f5f5;
+}
+
+.results label {
+  width: 100%;
+  font-size: 14px;
+  text-align: start;
+  margin-right: 5px;
+}
+
+.results select {
+  margin-top: 5px;
+  padding: 6px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 60px;
+  background-color: #ffffff;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #967200;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.table-aditional > p {
+  color: #967216;
+}
+
+.table-aditional {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  header {
+    height: 65px;
+    padding: 15px;
+  }
+  header img {
+    width: 18%;
+  }
+
+  header div {
+    line-height: 10px;
+  }
+  .recents li {
+    margin-left: 40px;
+  }
+
+  .lastBox {
+    width: 200px;
+  }
+}
+
+@media (max-width: 760px) {
+  section {
+    flex-direction: column-reverse;
+  }
+
+  section .firstBox {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .search {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+  }
+
+  .search > label,
+  .search > input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .dates > label,
+  .dates > input {
+    width: 100%;
+    margin-left: 35px;
+    margin-bottom: 10px;
+  }
+
+  .recents li {
+    margin-left: 95px;
+  }
+
+  .lastBox {
+    width: 610px;
+  }
+}
+
+@media (max-width: 580px) {
+  header {
+    height: 60px;
+  }
+
+  header div {
+    margin-top: 0px;
+    line-height: 10px;
+  }
+
+  section .firstBox {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .recents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recents li {
+    margin-left: 35%;
+  }
+
+  .lastBox {
+    width: 450px;
+  }
+}

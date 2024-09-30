@@ -1,0 +1,413 @@
+:root {
+  --accent: #967216;
+  --cyan-bluish-gray: #abb8c3;
+  --luminous-vivid-orange: #ff6900;
+  --dark-gray: #111;
+  --light-gray: #767676;
+  --grey: #333333;
+  --silver: #c8d3d5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: var(--light-gray);
+  background-repeat: no-repeat;
+  font-size: 14px;
+  overflow-x: hidden;
+  display: grid;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-image: linear-gradient(
+    to right,
+    black 9%,
+    #1d1d1d 50%,
+    #1d1d1d 100%
+  );
+  display: flex;
+  max-height: 150px;
+  color: rgb(232, 232, 232);
+  padding: 20px;
+  padding-left: 50px;
+  border-bottom: 5px solid var(--accent);
+  margin-bottom: 60px;
+}
+
+header img {
+  height: 100%;
+  margin-right: 13px;
+}
+header div {
+  flex: 70%;
+  margin-left: 12px;
+  line-height: 14px;
+}
+
+header .user {
+  flex: 30%;
+  text-align: right;
+  align-self: center;
+}
+
+.user h3 {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.login h2 {
+  margin-right: 10px;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.login form button {
+  background-color: #967216;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  margin-right: 20px;
+}
+
+main {
+  margin: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main > section {
+  background-color: #dad4d4;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0px 0px 30px #161515b7;
+}
+
+main > section {
+  width: 85%;
+}
+
+.buttons button {
+  padding: 5px;
+  border: none;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #967216;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.buttons .active {
+  background-color: var(--accent);
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.tabs {
+  background-color: white;
+  border: none;
+  border-radius: 0 5px 5px 5px;
+  padding: 10px;
+}
+
+.subir form,
+.editar form {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 20px;
+  border: 1px solid black;
+  /* border-radius: 5px; */
+  padding: 10px;
+  margin: 15px;
+}
+
+form.gabriel {
+  /* Add your desired styles here */
+  /* background-color: #f2f2f2; */
+  justify-content: center;
+  padding: 10px;
+  border: none;
+
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+form.gabriel input[type="text"],
+form.gabriel button[type="submit"] {
+  /* Add styles for text inputs and submit buttons */
+
+  padding: 8px;
+  margin-right: 5px;
+}
+
+form.gabriel input[type="text"] {
+  /* Add specific styles for text inputs */
+  width: 200px;
+}
+
+form.gabriel button[type="submit"] {
+  /* Add specific styles for submit buttons */
+  background-color: #967216;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+form.gabriel button[type="submit"]:hover {
+  background-color: #967216;
+}
+.subir h3 {
+  text-align: center;
+}
+
+.subir form input[type="submit"],
+.editar form input[type="submit"] {
+  width: 30%;
+  justify-self: center;
+  background-color: #967216;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+
+.file {
+  text-align: center;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 20px;
+}
+
+.innerBox {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.innerBox label {
+  text-align: right;
+}
+
+.innerBox select,
+.innerBox input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.backline {
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 5px;
+}
+.search-bar button {
+  background-color: #967216;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  font-style: italic;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 5px #645f5f;
+  margin: 10px 25px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+thead {
+  background-color: var(--accent);
+  color: #e8e6e6;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e9e7e7;
+}
+
+.crear {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  padding-bottom: 15px;
+}
+
+.crear table th,
+.crear table td {
+  text-align: center;
+}
+
+.crear table td button {
+  justify-self: center;
+  background-color: #967216;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+footer {
+  height: 60px;
+  background-color: #161515;
+  border-top: 5px solid var(--accent);
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.enlazar {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.records {
+  display: flex;
+  align-items: center;
+}
+.records form {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  margin: 0 !important;
+}
+
+/*Enlazar */
+
+.Endiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Ensection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Ensection div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.Endocs {
+  display: flex;
+  justify-content: space-around;
+}
+.Endocs select {
+  font-size: 1.05rem;
+}
+.Endocs select option {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.m1 {
+  justify-content: center;
+}
+
+/* keywords */
+.keywords {
+  text-align: center;
+}
+
+.dropdown button {
+  width: 100%;
+  justify-content: center;
+  font-weight: normal;
+  display: block;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+  white-space: nowrap;
+}
+
+.keyword-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.keyword-menu label {
+  margin: 0 5px;
+}
+
+.admins h3 {
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  header {
+    height: 65px;
+    padding: 15px;
+    padding-left: 50px;
+  }
+  header img {
+    width: 8%;
+    height: 100%;
+  }
+
+  header div {
+    line-height: 10px;
+  }
+}

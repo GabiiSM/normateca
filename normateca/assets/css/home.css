@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  max-height: 75px;
+  color: #333333;
+  border-top: 12px solid #967216;
+  padding: 20px;
+  padding-left: 50px;
+  box-shadow: 0 7px 9.5px -9.5px grey;
+}
+
+header img {
+  width: 13%;
+  margin-right: 13px;
+  margin-bottom: 10px;
+}
+
+#upra {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  /* width: 200%;
+  margin-right: 13px; */
+}
+
+header h3 > i {
+  color: #967200;
+}
+
+header div {
+  margin-left: 12px;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 14px;
+}
+
+section {
+  text-align: center;
+  justify-content: center;
+  min-height: 1000px;
+  color: #333333;
+}
+
+p {
+  color: black;
+}
+
+.main {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.main p {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.main h1 {
+  font-size: 28px;
+}
+
+.main img {
+  width: 100%;
+  box-shadow: 0 6px 9px 4px grey;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contenido,
+.cuerpos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.btn {
+  padding: 14px 10px;
+  background-color: #967216;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  width: 180px;
+}
+
+.btn-live {
+  width: 230px;
+}
+
+.btn:hover {
+  background-color: #b0922e;
+}
+
+footer {
+  background-color: #826314;
+  height: 15px;
+}
+
+@media (max-width: 785px) {
+  .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .contenido,
+  .cuerpos {
+    width: 50%;
+  }
+
+  header img {
+    width: 14%;
+  }
+
+  header {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  section {
+    min-height: 1170px;
+  }
+
+  .container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .contenido,
+  .cuerpos {
+    width: 50%;
+  }
+
+  .btn {
+    width: 120px;
+  }
+
+  .btn-live {
+    width: 230px;
+  }
+
+  header img {
+    width: 20%;
+  }
+
+  header {
+    padding-left: 25px;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header h3 > i {
+    font-size: 16px;
+  }
+}
